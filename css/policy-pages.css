@@ -1,0 +1,217 @@
+
+/* Wizetek IT Solutions - Policy Pages */
+
+:root {
+    --primary: #123b75;
+    --primary-dark: #0b2448;
+    --accent: #17a7a1;
+    --text: #263449;
+    --muted: #66758a;
+    --background: #f5f8fc;
+    --white: #ffffff;
+    --border: #e3eaf3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--background);
+    line-height: 1.75;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 7%;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.brand {
+    color: var(--primary-dark);
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.brand span {
+    color: var(--accent);
+}
+
+.site-header nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.site-header nav a {
+    color: var(--text);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.site-header nav a:hover {
+    color: var(--accent);
+}
+
+.policy-container {
+    width: min(100% - 32px, 1000px);
+    margin: 48px auto 64px;
+}
+
+.policy-hero {
+    padding: 48px 40px;
+    color: var(--white);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    border-radius: 18px;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: #79e3d8;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.policy-hero h1 {
+    margin: 0 0 12px;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.2;
+}
+
+.policy-hero > p:last-child {
+    max-width: 650px;
+    margin-bottom: 0;
+    color: #e2eafa;
+}
+
+.policy-content {
+    margin-top: 28px;
+    padding: 40px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 8px 35px rgba(20, 43, 75, 0.04);
+}
+
+.last-updated {
+    padding-bottom: 18px;
+    margin-top: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.policy-content h2 {
+    margin: 30px 0 10px;
+    color: var(--primary-dark);
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.policy-content h2:first-of-type {
+    margin-top: 26px;
+}
+
+.policy-content p {
+    margin: 10px 0 16px;
+}
+
+.policy-content ul {
+    padding-left: 24px;
+}
+
+.policy-content li {
+    padding-left: 4px;
+    margin-bottom: 8px;
+}
+
+.policy-content a {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.site-footer {
+    padding: 28px 7%;
+    color: #dbe5f4;
+    background: var(--primary-dark);
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0 0 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+.footer-links a {
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: #79e3d8;
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 5%;
+    }
+
+    .site-header nav {
+        gap: 12px 18px;
+    }
+
+    .policy-container {
+        width: min(100% - 20px, 1000px);
+        margin: 24px auto 36px;
+    }
+
+    .policy-hero {
+        padding: 32px 24px;
+        border-radius: 12px;
+    }
+
+    .policy-content {
+        padding: 24px 20px;
+        border-radius: 12px;
+    }
+
+    .policy-content h2 {
+        font-size: 1.12rem;
+    }
+
+    .site-footer {
+        padding: 24px 5%;
+    }
+}
